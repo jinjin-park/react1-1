@@ -9,6 +9,8 @@ import Clock from './chapter_04/Clock';
 import Welcome from './Welcome';
 import CommentList from './chapter_05/CommentList';
 import NotificationList from './chapter_06/NotificationList';
+import Counter from './Counter';
+import FocusButton from './FocusButton';
 
 
 
@@ -16,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
     root.render(
     <React.StrictMode>
-      <NotificationList />
+      <App />
     </React.StrictMode>
     );
 

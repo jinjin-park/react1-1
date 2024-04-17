@@ -28,19 +28,19 @@ class NotificationList extends React.Component {
     }
 
     componentDidMount() {
-        const { notifications } = this.state;
         timer = setInterval(() => {
+        const { notifications } = this.state;        
             if (notifications.length < reservedNotifications.length) {
                 const index = notifications.length;
                 notifications.push(reservedNotifications[index]);
                 this.setState({
                     notifications: notifications,
                 });
-            } else {
-                this.setState({
-                    notifications: [],
-                });
-                clearInterval(timer);
+            // } else {
+            //     this.setState({
+            //         notifications: [],
+            //     });
+            //     clearInterval(timer); 안없어지게
             }
         }, 1000);
     }
