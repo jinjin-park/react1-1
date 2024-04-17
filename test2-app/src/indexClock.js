@@ -6,19 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import Hello from './Hello'
 import Library from './chapter_03/Library';
 import Clock from './chapter_04/Clock';
-import Welcome from './Welcome';
-import CommentList from './chapter_05/CommentList';
-import NotificationList from './chapter_06/NotificationList';
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-    root.render(
+setInterval(() => {
+  root.render(
     <React.StrictMode>
-      <NotificationList />
+      <Clock />
     </React.StrictMode>
-    );
+  );
+}, 1000)
 
 //root.render(
   //<React.StrictMode>

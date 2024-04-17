@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './Welcome';
 
 function App() {
   return (
@@ -18,8 +19,11 @@ function App() {
           Learn React GOGO
         </a>
       </header>
+      <Welcome name="인제"/>
+      <Welcome name="순신"/>
+      <Welcome name="감찬"/>
     </div>
   );
+  
 }
-
 export default App;
